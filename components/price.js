@@ -1,18 +1,11 @@
 import Divider from "@mui/material/Divider";
 import Chip from "@mui/material/Chip";
 import Alert from "@mui/material/Alert";
+import styles from "../styles/Home.module.css";
 
 export default function Price() {
   return (
-    <div
-      style={{
-        width: "30%",
-        marginLeft: "30%",
-        textAlign: "center",
-        marginTop: "50px",
-        marginBottom: "20px",
-      }}
-    >
+    <div className={styles.price}>
       <h2 style={{ fontWeight: "600", margin: "10px 0 10px 0" }}>Price</h2>
       <h1 style={{ margin: "10px" }}>£ 220</h1>
       <Divider>

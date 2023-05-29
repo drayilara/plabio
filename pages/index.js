@@ -5,24 +5,20 @@ import { MdEmail } from "react-icons/md";
 import { BsTelephoneFill } from "react-icons/bs";
 import commitment from "../data/commitment.json";
 import Links from "@/components/links";
+import styles from "../styles/Home.module.css";
 
 export default function Plabio() {
   return (
     <>
       <div className="app-container">
-        <h1
-          style={{
-            margin: "20px 0 20px 100px",
-            fontWeight: "400",
-            padding: "20px",
-          }}
-        >
+        <h1 className={styles.brand}>
           Plabio
         </h1>
         <div
-          style={{ fontWeight: "600", textAlign: "center", padding: "70px" }}
+          className="header"
+          style={{ fontWeight: "600", textAlign: "center", padding: "30px" }}
         >
-          <h1 className="header">
+          <h1>
             Unlock Your Future in UK Medicine. <br /> Gain The Confidence You
             Need to Conquer The PLAB 2 Exam.
           </h1>
@@ -40,7 +36,9 @@ export default function Plabio() {
           {/* A list of core servces here */}
           {commitment.commitments.map((com) => {
             const { heading, desc } = com;
-            return <List key={heading.toString()} heading={heading} desc={desc} />;
+            return (
+              <List key={heading.toString()} heading={heading} desc={desc} />
+            );
           })}
         </div>
 
@@ -49,13 +47,7 @@ export default function Plabio() {
         <Links />
 
         <div
-          style={{
-            width: "30%",
-            marginLeft: "30%",
-            textAlign: "center",
-            marginTop: "50px",
-            marginBottom: "20px",
-          }}
+          className={styles.price}
         >
           <h3 style={{ fontWeight: "600", margin: "10px 0 10px 0" }}>
             Contact Us

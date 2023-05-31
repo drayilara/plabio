@@ -8,6 +8,9 @@ export default function Links() {
   const curriculum =
     "https://docs.google.com/document/d/1anAUPb085Wb8Mk4xVNCorHJfoNsxMQ4YVmqd2yk-C3k/edit?usp=sharing";
 
+  const hematologyDemo =
+    "https://docs.google.com/presentation/d/1NUcpM9JStHjP87pMqRgGnxOKR_2J_Rgh5daogYXvfHQ/edit?usp=sharing";
+
   return (
     <div className={styles.price}>
       <h2
@@ -23,6 +26,14 @@ export default function Links() {
       </Button>
       <Button style={{ margin: "15px" }} variant="contained" href={curriculum}>
         Our curriculum
+      </Button>
+
+      <Button
+        style={{ margin: "15px" }}
+        variant="contained"
+        href={hematologyDemo}
+      >
+        <strong>Read our slides on hematology for free!</strong>
       </Button>
     </div>
   );

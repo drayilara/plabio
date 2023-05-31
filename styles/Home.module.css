@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
 .brand {
-  font-weight: 400px;
+  font-family: 'Comfortaa', cursive;
   padding: 70px 0 70px 70px;
   font-weight: 400;
 }

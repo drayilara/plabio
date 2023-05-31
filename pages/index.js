@@ -6,14 +6,39 @@ import { BsTelephoneFill } from "react-icons/bs";
 import commitment from "../data/commitment.json";
 import Links from "@/components/links";
 import styles from "../styles/Home.module.css";
+import Head from "next/head";
 
 export default function Plabio() {
   return (
     <>
+      <Head>
+        <title>Plabio - PLAB 2 academy</title>
+        <meta name="author" content="Plabio PLAB 2 academy" />
+        <meta
+          name="description"
+          content="Plabio is a PLAB 2 academy that offers quality coaching at the most affordable price on the market. We are your pathway to getting registered by the GMC"
+        />
+        <meta
+          property="og:description"
+          content="Plabio is a PLAB 2 academy that offers quality coaching at the most affordable price on the market. We are your pathway to getting registered by the GMC"
+        />
+        <meta
+          property="og:title"
+          content="Plabio - A high quality and affordable PLAB 2 academy"
+        />
+        <meta
+          name="twitter:title"
+          content="Plabio - A high quality and affordable PLAB 2 academy"
+        />
+        <meta
+          name="twitter:description"
+          content="Plabio is a PLAB 2 academy that offers quality coaching at the most affordable price on the market. We are your pathway to getting registered by the GMC"
+        />
+
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+      </Head>
       <div className="app-container">
-        <h1 className={styles.brand}>
-          Plabio
-        </h1>
+        <h1 className={styles.brand}>Plabio</h1>
         <div
           className="header"
           style={{ fontWeight: "600", textAlign: "center", padding: "30px" }}
@@ -46,9 +71,7 @@ export default function Plabio() {
 
         <Links />
 
-        <div
-          className={styles.price}
-        >
+        <div className={styles.price}>
           <h3 style={{ fontWeight: "600", margin: "10px 0 10px 0" }}>
             Contact Us
           </h3>

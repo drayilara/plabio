@@ -14,10 +14,6 @@ export default function Price() {
       <h1 style={{ margin: "10px" }}>₦ 200,000</h1>
 
       <Alert variant="outlined" severity="info">
-        <strong>30% discount for the first 5 students.</strong>
-      </Alert>
-      <br />
-      <Alert variant="outlined" severity="info">
         <strong>
           Next cohort commences on the 16th of June - Only 10 slots available.
           Book now!

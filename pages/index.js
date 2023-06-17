@@ -9,7 +9,6 @@ import Links from "@/components/links";
 import styles from "../styles/Home.module.css";
 import Head from "next/head";
 import { BsTelegram } from "react-icons/bs";
-import AlertDialog from "@/components/alert_dialog";
 
 export default function Plabio() {
   const [dialogState, setDialogState] = useState(false);
@@ -19,10 +18,11 @@ export default function Plabio() {
       <strong>10th of June, 2023.</strong>
       <br />
       <strong>
-        Title: Passing PLAB 2 with Flying Colors: Insider Tips for First-Time Success.
+        Title: Passing PLAB 2 with Flying Colors: Insider Tips for First-Time
+        Success.
       </strong>
       <br />
-       Find out more{" "}
+      Find out more{" "}
       <a style={{ color: "blue" }} href="https://t.me/+zEztjbYX4zIxYzc0">
         here
       </a>
@@ -68,11 +68,6 @@ export default function Plabio() {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
       </Head>
       <div className="app-container">
-        <AlertDialog
-          initialState={dialogState}
-          updater={setDialogState}
-          message={message}
-        />
         <h1 className={styles.brand}>Plabio</h1>
         <div
           className="header"
